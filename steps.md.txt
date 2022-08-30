@@ -1,0 +1,61 @@
+//Tutorial
+https://youtu.be/mpWFrUwAN88
+rails g scaffold post title content:text
+rails db:migrate
+
+cat db/schema.rb
+
+localhost:3000/posts
+
+ application.html.erb
+<link rel="stylesheet" href= "https://cdn.simplecss.org/simple.min.css">
+
+post.rb
+validates_presence_of :title
+
+rails c
+Post.first
+Post.create! title: "From the console", contente:"Nice"
+Post where(created at:Time.now.all_day)
+exit
+
+
+rails action_text:install
+bundle
+rails db:migrate
+
+post.rb
+has_rich_text_ :content
+
+restart server
+
+_form.html.erb
+
+#21
+<%= form.rich_text_area.......
+
+
+
+//
+application.js
+
+import "@hotwired/turbo-rails"
+import "controllers"
+import "trix"
+import "@rails/actiontext"
+
+
+
+/bin/importmap
+./bin/importmap pin local-time
+import LocalTime from "local-time"
+LocalTime.start()
+
+
+_post.html.erb
+<p>
+Posted <%= time_tag post.created_at, "data-local": "time-ago" %>
+
+</p>
+
+
