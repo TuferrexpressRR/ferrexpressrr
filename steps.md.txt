@@ -56,6 +56,44 @@ _post.html.erb
 <p>
 Posted <%= time_tag post.created_at, "data-local": "time-ago" %>
 
+
+https://learngitbranching.js.org/?locale=es_ES
+
+Tienes una gran variedad de comandos de git en este sandbox. Estos incluyen:
+
+commit
+branch
+checkout
+cherry-pick
+reset
+revert
+rebase
+merge
+
+develop
+staging
+main
+
+
+git init #Inicializa el repositorio
+git add .
+git status
+git commit -m "primer"
+git status
+git log
+
+git branch apellidos
+git branch
+git checkout apellidos
+
+git branch
+git log
+
+git checkout main
+
+git merge apellidos
+
+
 </p>
 
 
